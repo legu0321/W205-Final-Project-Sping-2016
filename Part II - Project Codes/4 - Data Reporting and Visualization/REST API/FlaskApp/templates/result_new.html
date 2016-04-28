@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Python Flask Bucket List App</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+	<style>
+		h4 {
+			text-align: left
+		}
+
+	</style>
+
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Welcome to the OnTime Data Center!</h3>
+        </div>
+	<form action="/queryairport" method="post">
+		<h4>Please input Airport Code
+		<input type="text" name="airport"></input>
+		<input type="submit" value="GO" class="btn btn-sm btn-success"></input>
+		</h4>
+	</form>
+	
+	<form action="/querymanu" method="post">
+		<h4>Please input Manufacturer Name
+		<input type="text" name="manufacturer"></input>
+		<input type="submit" value="GO" class="btn btn-sm btn-success"></input>
+		</h4>
+	</form>
+	
+	<form action="/queryairline" method="post">
+		<h4>Please input Airline Code
+		<input type="text" name="airline"></input>
+		<input type="submit" value="GO" class="btn btn-sm btn-success"></input>
+		</h4>
+	</form>
+
+	<form action="/queryweather" method="post">
+		<h4>Please input Airport for Weather
+		<input type="text" name="air"></input>
+		<input type="submit" value="GO" class="btn btn-sm btn-success"></input>
+		</h4>
+	</form>
+	
+        
+ 
+ 
+        <footer class="footer">
+            <p style="text-align: center">&copy; Le Gu</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
