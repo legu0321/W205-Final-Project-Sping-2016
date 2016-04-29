@@ -1,3 +1,8 @@
-[Tableau Workbook] contains the on-time Tableau workbooks, guide for connecting Tableau to EC2 PostgreSQL Database and example screenshots.
+[Tableau Workbook] contains data explorations with Tableau to assess the importance of various features
+                  - Delay by carrier
+                  - Delay by time of day
+                  - Delay by distance group
+                  - Delay by month
+                  - Popular routes
 
-[REST API] contains step-by-step instructions on how to start hive thrift server, how to run Flask applicationa and how to serve data in web browser.
+[Delay prediction] contains a machine learning prediction model that uses features across different datasets to predict the "DepDel15" variable (whether or not there is a delay of 15 minutes or more)
